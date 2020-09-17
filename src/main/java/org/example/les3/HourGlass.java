@@ -6,9 +6,9 @@ public class HourGlass {
 
         if (n % 2 == 0) {
             throw new ArithmeticException();
-        } else {
-            printHourglass(n);
         }
+
+        printHourglass(n);
 
     }
 

@@ -4,6 +4,7 @@ import org.example.les2.Test;
 import org.example.les3.ElevenProof;
 
 import org.example.les3.SetNumber;
+import org.example.les5.OpdrachtOne;
 
 
 public class Start {
@@ -14,6 +15,7 @@ public class Start {
         Test.sum();
         Test.test();
         ElevenProof.bankAccount();
+
 
 
         int i = 3;
