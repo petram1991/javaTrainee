@@ -15,24 +15,28 @@ public class Start {
         }
         */
 
-        Bank ing = new Bank();
+        try {
+            Bank ing = new Bank();
 
-        BankAccount petra = new BankAccount();
-        ing.addAccount(petra);
-
-
-        petra.withdraw(200);
-        System.out.println("Balance is " + petra.getBalance());
+            BankAccount petra = new BankAccount(1);
+            BankAccount tom = new BankAccount(2);
 
 
 
+            ing.addAccount(petra);
+            ing.addAccount(tom);
 
-
-
-
-
-
-
+            petra.withdraw(500);
+            System.out.println(petra.getBalance());
+            tom.withdraw(400);
+            ing.transfer(tom, petra, 30);
+            ing.printAccounts();
+            System.out.println("Balance van Petra is " + petra.getBalance());
+            System.out.println("Balance van Tom is " + tom.getBalance());
+            System.out.println(petra.getAccountNumber());
+        }catch (Exception e){
+            System.out.println("saldo te laag");
+        }
     }
 }
 
