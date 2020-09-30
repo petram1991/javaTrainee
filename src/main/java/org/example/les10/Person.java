@@ -22,7 +22,7 @@ public class Person extends Human {
         this.age = age;
         this.gender = gender;
     }
-    void greet(){
-        System.out.println( "Hello, my name is " + name + " Nice to meet you!");
+    public String greet(){
+        return ( "Hello, my name is " + name + " Nice to meet you!");
     }
 }

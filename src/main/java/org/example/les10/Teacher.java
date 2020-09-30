@@ -7,9 +7,9 @@ public class Teacher extends Person {
     }
 
     @Override
-    void greet() {
+   public String greet() {
         super.greet();
         //extra
-        System.out.println("i'm a teacher");
+        return ("i'm a teacher");
     }
 }
